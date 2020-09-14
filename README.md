@@ -1,6 +1,6 @@
 # AUTO-QA
 
-## Step 1: Generate Scene file for Image-Scnes
+## Step 1: Generate scene file for Image-Scenes
 
 First we will create label file corresponding to each log file in lidar dataset by projectind 3D annotation into images.
 ```bash
