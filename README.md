@@ -32,3 +32,8 @@ The generated scene files for each log can be found in `output\[train\test]_scen
    python generate_questions.py '--input_scene_file'='../output/ARGO_test_scenes.json' '--output_questions_file'=../output/ARGO_test_questions.json'
 ```
 Generate json file containing training and test set questions with answer and program at ```output/ARGO_[train/test]_questions.json```
+
+
+## Step 3: Encoding question and Feature Extraction
+
+
