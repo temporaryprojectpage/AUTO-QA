@@ -35,11 +35,14 @@ Generate json file containing training and test set questions with answer and pr
 
 
 ## Step 3: Encoding question and Feature Extraction
-
+ ### a) Encoding Question
 ```bash
    cd ../argo_preprocess
    python preprocess_questions.py  --input_questions_json='../output/ARGO_[train/test]_questions.json'  --output_h5_file='all_questions.h5' --output_vocab_json=' vocab_[train/test].json'
 ```
+#### b) Train/Val Split
+
+#### c) Feature Extraction
 
 
 
