@@ -1,5 +1,8 @@
-# AUTO-QA
+AUTO-QA
+# Setup
+First setup virtual environment for development usign conda or pip
 
+# Dataset Generation
 ## Step 1: Generate scene file for Image-Scenes
 
 First we will create label file corresponding to each log file in lidar dataset by projectind 3D annotation into images.
@@ -33,8 +36,8 @@ The generated scene files for each log can be found in `output\[train\test]_scen
 ```
 Generate json file containing training and test set questions with answer and program at ```output/ARGO_[train/test]_questions.json```
 
-
-## Step 3: Encoding question and Feature Extraction
+# Baseline Models
+## Step 1: Encoding question and Feature Extraction
  ### a) Encoding Question
 ```bash
    cd ../argo_preprocess
@@ -50,4 +53,4 @@ Generate json file containing training and test set questions with answer and pr
 ```bash
    python extract_img_features.py --img_size=224  --root_dir='[PATH TO DATASET FOLDER]' --model_type='resnet101'
 ```
-## Step 4: Baseline Models
+## Step 2:Models
