@@ -5,13 +5,13 @@
 First we will create label file corresponding to each log file in lidar dataset by projectind 3D annotation into images.
 ```bash
    cd argo_preprocess
-   python annotation_generate.py --input_dir=[path to dataset folder]
+   python annotation_generate.py --input_dir='[path to dataset folder]'
 ```
 
 Next we will create scene file, taking reference as the data collection vehicle.
 
 ```bash
-   python scene_create.py --input_dir=[path to dataset folder] --split=[train/test]
+   python scene_create.py --input_dir='[path to dataset folder]' --split='[train/test]'
 ```
 The generated scene files for each log can be found in `output\[train\test]_scenes`
 
@@ -28,12 +28,19 @@ The generated scene files for each log can be found in `output\[train\test]_scen
 
 
 ```bash
-   python generate_questions.py '--input_scene_file'='../output/ARGO_train_scenes.json' '--output_questions_file'=../output/ARGO_train_questions.json'
-   python generate_questions.py '--input_scene_file'='../output/ARGO_test_scenes.json' '--output_questions_file'=../output/ARGO_test_questions.json'
+   python generate_questions.py --input_scene_file='../output/ARGO_train_scenes.json' --output_questions_file='../output/ARGO_train_questions.json'
+   python generate_questions.py --input_scene_file='../output/ARGO_test_scenes.json' --output_questions_file='../output/ARGO_test_questions.json'
 ```
 Generate json file containing training and test set questions with answer and program at ```output/ARGO_[train/test]_questions.json```
 
 
 ## Step 3: Encoding question and Feature Extraction
+
+```bash
+   cd ../argo_preprocess
+   python preprocess_questions.py  --input_questions_json='../output/ARGO_[train/test]_questions.json'  --output_h5_file='all_questions.h5' --output_vocab_json=' vocab_[train/test].json'
+```
+
+
 
 
