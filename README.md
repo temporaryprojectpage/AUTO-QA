@@ -11,7 +11,7 @@ First we will create label file corresponding to each log file in lidar dataset 
 Next we will create scene file, taking reference as the data collection vehicle.
 
 ```bash
-   python scene_create.py --input_dir <path to dataset folder>
+   python scene_create.py --input_dir <path to dataset folder> --split <train/test>
 ```
-
+The generated scene file can be found in `output\[train\test]_scenes`
 
