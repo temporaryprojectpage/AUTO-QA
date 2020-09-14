@@ -1,4 +1,4 @@
-AUTO-QA
+# AUTO-QA
 # Setup
 First setup virtual environment for development usign conda or pip
 
