@@ -47,7 +47,7 @@ Generate json file containing training and test set questions with answer and pr
 ```
 
 #### c) Feature Extraction
-
-
-
+```bash
+   python extract_img_features.py --img_size=224  --root_dir='[PATH TO DATASET FOLDER]' --model_type='resnet101'
+```
 
