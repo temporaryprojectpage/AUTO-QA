@@ -41,6 +41,9 @@ Generate json file containing training and test set questions with answer and pr
    python preprocess_questions.py  --input_questions_json='../output/ARGO_[train/test]_questions.json'  --output_h5_file='all_questions.h5' --output_vocab_json=' vocab_[train/test].json'
 ```
 #### b) Train/Val Split
+   ```bash
+   python train_test_split.py
+```
 
 #### c) Feature Extraction
 
