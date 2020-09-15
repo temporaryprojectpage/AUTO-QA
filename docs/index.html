@@ -1,4 +1,5 @@
 
+
 <html class="gr__filebox_ece_vt_edu"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 	<style>
@@ -144,7 +145,19 @@
 		margin-right: 45px;
 	}
 
-
+	.caption2{
+		 margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+	}
+	.Question{
+		padding:5px;
+		font-family: Times;
+	}
+	.instance{
+		padding:0px 10%;
+	}
 	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
 		box-shadow:
 		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
@@ -175,18 +188,11 @@
 		border: 0.5px dashed black;
 		border-collapse: collapse;
 	}
-	.caption2{
-		 margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 0px;
-  margin-left: 0px;
-	}
-	.Question{
-		padding:5px;
-		font-family: Times;
-	}
-	.instance{
-		padding:0px 10%;
+	.std2{
+		border: 0.5px dashed black;
+		border-collapse: collapse;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 	td {
 		padding: 15px;
@@ -210,98 +216,61 @@
 </script>
 
 </head>
-
-
 <body data-gr-c-s-loaded="true">
-<div class="container">
 
-<div style="margin-top: 20px">
-	<div style="float: left; width: 10%; margin-left: 5%"><a href="#"><img src="#" alt="."/></a></div>
-	<div style="float: left; width: 70%;">
-	<div class="block_1">
 
-		<div class="block_1">
-			<div align="center">
+<!-- ---------------------------------nav bar------------------------------------------------------------------------ -->
+	<div class="container">
+		<div style="margin-top: 20px">
+			<div style="float: left; width: 10%; margin-left: 5%">
+				<a href=""><img src="" alt=""/></a>
+			</div>
+		<div style="float: left; width: 70%;">
+			<div class="block_1">
+				<div class="block_1">
+					<div align="center">
 				<p class="sz20 no_margin"><b>AUTO QA</b>: The Question Is Not Only
 											What, but Also Where</p>
+				</div>
+
+					<p align="center">
+					</p><p class="no_margin bold" align="center"> <a class="link" href="">Author 1</a><sup></sup>, <a class="link" href="">Author 2</a><sup></sup>, <a class="link" href="">Author 3</a></p>
+
+					<p class="sz12" align="center">
+	<!--					<a class="link" href="#">[Paper]</a>-->
+						<a class="link" href="">[Paper]</a>
+						<a class="link" href=""> [Github]</a>
+					<p align="center">
+				</p>
 			</div>
-			<p align="center">
-			</p><p class="no_margin bold" align="center"> <a class="link" href="#">Author 1</a><sup></sup>, <a class="link" href="#">Author2</a><sup></sup>, <a class="link" href="#">Author 3</a></p>
-<!--            <p  class="no_margin" align="center"><a href="http://deltalab.iitk.ac.in/">Delta Lab</a></p>-->
-<!--				<p class="no_margin" align="center"><a href="http://iitk.ac.in/">Indian Institute of Technology Kanpur</a></p>-->
-				<p class="sz12" align="center">
-<!--					<a class="link" href="#">[Paper]</a>-->
-					<a class="link" href="#">[Paper]</a>
-					<a class="link" href="#"> [Github]</a>
-			<p align="center">
-			</p>
 		</div>
 	</div>
-</div>
-	<div style="float: left; width: 10%;"><a href=""><img src="#"  alt="."/></a></div>
-<!--<div class="halign">
-		<div class="block_1">
-			<div class="">
+	<div style="float: left; width: 10%;"><a href=""><img src=""  alt=""/></a></div>
 
-			</div>
-	</div>
-</div>-->
+<!-- ----------------------------------------------------------------------------------- -->
+
+
+<!-- ----------------------------------------------Abstract--------------------------------------------- -->
+
+
 
 	<div class="block_1">
 		<div class="">
 			<br>
 			<hr>
 			<p class="sz15 bold">Abstract:</p>
-			<!-- <div class="thumbnail" style="float:right; margin-left: 20px" >
-					<img src="static/opening.png" alt="Lights" style="max-width:400px">
-					<div class="caption" style="max-width:400px">
-						<p>The figure shows the activation maps for baseline
-							and our models (A-GCA and P-GCA). In the first exaample, the baseline model had predicted the wrong answer and had
-							high uncertainty in prediction.
-							Our model gave a correct answer while also minimizing
-							the uncertainty (thus leading to an improved visual explanation).</p>
-					</div>
-			</div> -->
-<!--				<div class="padding20" style="float:right ">-->
-<!--					<img  src="static/opening.png">-->
-
-<!--				</div>-->
-				<p class="sz12">
-					In this paper, we investigate the task of Visual Question An-swering  (VQA),  specifically  for  vehicles.  The  challenge  insuch settings is that one has access to information availablefrom a range of sensors and it is important to localize the in-formation available appropriately while answering questions.This is quite unlike the existing work in VQA that is prevalentmainly for queries in a single image. As there is no existingdata-set that is available for such a task, we provide the firstsuch data-set aimed specifically to evaluate the performanceof state of the art systems for solving such tasks. Evidently,the present methods need to be adapted. We do that by addingability to localize the source of information in existing VQAmodels and provide a benchmark consisting of the state ofthe art VQA models adapted to use images from all direc-tions while answering queries. Another available source fordata is LIDAR data
-				</p>
-			<!-- 		<ul class="sz12">
-			<li> Improvement in obtaining the certainty estimates that correlate better with misclassified samples.</li>
-			<li> Improved attention maps that provide state-of-the-art results in terms of correlation with human attention regions. </li>
-					</ul>
 			<p class="sz12">
-					The improved attention maps result in consistent improvement for various methods for visual question answering. Therefore, the proposed technique can be thought of as a recipe for obtaining improved certainty estimates and explanation for deep learning models. We provide detailed empirical analysis for the visual question answering task on all standard benchmarks and comparison with state of the art methods.
-			</p> -->
+					Visual Question Answering can be a functionally relevant task if purposed as such. In this paper, we aim to investigate and evaluate its efficacy in terms of localization-based question answering. We do this specifically in the context of autonomous driving where this functionality is important. To achieve our aim, we provide a new dataset, Auto-QA. Our new dataset is built over the Argoverse dataset and provides a truly multi-modal setting with seven views per frame and point-cloud LIDAR data being available for answering a localization-based question. We contribute localized attention adaptations of most popular VQA baselines and evaluate them on this task. We also provide joint point-cloud and image-based baselines that perform well on this task. An additional evaluation that we perform is to analyse whether the attention module is accurate or not for the image-based VQA baselines. To summarize, through this work we thoroughly analyze the localization abilities through visual question answering for autonomous driving and provide a new benchmark task for the same. Our best joint baseline model achieves a useful 74.8% accuracy on this task.
+				</p>
 		</div>
 	</div>
 
-   <!--      <div class="block_1">
-                <div class="halign" style="float:right">
-                    <img style="max-width:601px" src="http://home.iitk.ac.in/~vinodkk/idda_model/idda_model.jpg">
-                </div>
-    </div>
- -->
 
-
-
-
- <!-- --------------------------- -->
- 	<p class="sz15 bold">
-		<br>
-		AN INSTANCE OF AUTO-QA:
-	</p>
+<!-- ---------------------------------------------------------------Instance diagram--------------------- -->
 	<div class="thumbnail" style="text-align: center" >
 		<img src="static/dataset_into_3.png" alt="Lights">
 		<hr class='caption2'>
 		<div class="instance">
-			<!-- <p>
-			The first column is the original image. 2nd, 3rd, 4th, and 5th columns represent the baseline attention, attention when only image uncertainty was minimized,
-			attention when only question uncertainty was minimized, attention when both image and question uncertainties were minimized (our proposed model) respectively.
-			</p> -->
 			<table style="text-align: center" >
 				<col style="width:45%">
 				<col style="width:20% ">
@@ -356,37 +325,55 @@
 		<p class ='caption' style="text-align: left; ">  An Instance of Autonomous Question Answering : (a) <b>Image Scene</b> which consists of seven images corresponding to seven different directions (b) <b>3D-Point Cloud </b> from lidar sensor for corresponding image-scene and different variety of generated question</p>
 	</div>
 
-<!-- ------------------------------------------------------- -->
 
+<!-- ---------------------------------------------------------------------Download-------------------------------------- -->
 
-
-
-	<!-- <p class="sz15 bold">
+	<p class="sz15 bold">
 		<br>
-		AUTO-QA Model:
+		DATASET:
 	</p>
-	<div class="thumbnail" style="float:right; margin-left: 20px" >
-		<img src="static/model.png" alt="Lights">
-		<hr>
-		<div class="caption">
-			<p>Illustration of model Gradient-based Certainty Attention Mask (<b>GCA</b>) and its certainty mask.
-				We obtain image feature and question feature using CNN and LSTM, respectively.
-				We then obtain attention mask using these features, and classification of the answer is done based on the attended feature.</p>
-
-			
+	<div class="well">
+		<p class="sz15 bold">
+			<br>
+			Download
+		</p>
+		<div class="" >
+			<p> Dataset is built over <a href="https://www.argoverse.org/index.html">Argoverse Dataset</a>.
+			It consists of 113 logs with multi-view images and lidar point cloud.				
+			Download Training dataset Lidar Point Cloud  and Images from Argoverse  
+				<a href="https://s3.amazonaws.com/argoai-argoverse/tracking_train1.tar.gz">[1,</a>
+				<a href="https://s3.amazonaws.com/argoai-argoverse/tracking_train2.tar.gz">2,</a>
+				<a href="https://s3.amazonaws.com/argoai-argoverse/tracking_train3.tar.gz">3,</a>
+				<a href="https://s3.amazonaws.com/argoai-argoverse/tracking_train4.tar.gz">4]</a>
+			</p>
+<!-- https://www.argoverse.org/index.html -->
+			<p> 
+				For test dataset Lidar Point Cloud  and Images 
+				<a href="https://s3.amazonaws.com/argoai-argoverse/tracking_val.tar.gz">Test Dataset</a>
+			</p>
 		</div>
+
+		<p class="sz15 bold">
+			<br>
+			Code
+		</p>
+		<p>
+		See our code on github <a href="#">GITHUB</a>. Here we provide code for scene generation, question generation. You may also test our baseline models involving individual modalities i.e Image and Lidar and also combined models with both modalities.
+		See our Github repo for more instructions on these.
+		</p>
 	</div>
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
 
-
+<!-- ----------------------------------------------------------Attention Visualization------------------------------ -->
 
 
 	<p class="sz15 bold">
 
-		Some example of visual explanations using our method:
+		Some example of Attention Visualization using our baseline models:
 	</p>
 
 
-	<div class="block_1" id="code">
+	<div class="block_1" id="code" >
 
 		<table>
 			<tr>
@@ -394,12 +381,13 @@
 					<table>
 						<tr>
 							<td colspan="2" class="std">
-								<i>Q</i>: <b>  What is the man holding?  </b>
+								<i>Q</i>: <b>  Is there a vehicle to my side right?</b> <i> Ans: </i> <b> True  </b>
 							</td>
 						</tr>
 						<tr>
-							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55288603-7b1bbc00-53d7-11e9-9459-19da90311150.png" align="center"></td>
-							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55269813-87abf180-52bd-11e9-87c9-35aac68c0713.gif" align="center"></td>
+							<td class="std"><img src="static/att1.png" align="center"></td>
+							<td class="std"><img src="static/level205.png" align="center"></td>
+							<!-- <td class="std"><img src="https://user-images.githubusercontent.com/48848404/55269813-87abf180-52bd-11e9-87c9-35aac68c0713.gif" align="center"></td> -->
 						</tr>
 					</table>
 				</td>
@@ -407,212 +395,75 @@
 					<table>
 						<tr>
 							<td colspan="2" class="std">
-								<i>Q</i>: <b>  Which room is this?  </b>
+								<i>Q</i>: <b>  What is the closest object on side left?</b> <i> Ans: </i> <b> Pedestrian </b>
 							</td>
 						</tr>
 						<tr>
-							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55288640-101eb500-53d8-11e9-8b48-fb0093ea3321.png" align="center"></td>
-							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55269810-7d89f300-52bd-11e9-88f1-ed9dc7da8a29.gif" align="center"></td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-		</table>
-<br>
-		<table>
-			<tr>
-				<td>
-					<table>
-						<tr>
-							<td colspan="2" class="std">
-								<i>Q</i>: <b>What is behind the TV?</b>
-							</td>
-						</tr>
-						<tr>
-							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55288609-9a1a4e00-53d7-11e9-9961-a63de48f3b78.png" align="center"></td>
-							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55269793-62b77e80-52bd-11e9-8bb3-776bd8633484.gif" align="center"></td>
-						</tr>
-					</table>
-				</td>
-				<td>
-					<table>
-						<tr>
-							<td colspan="2" class="std">
-								<i>Q</i>: <b> What is the girl eating? </b>
-							</td>
-						</tr>
-						<tr>
-							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55288646-2b89c000-53d8-11e9-8d7b-2e558307438b.png" align="center"></td>
-							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55269787-4fa4ae80-52bd-11e9-80ff-5863722072bb.gif" align="center"></td>
+							<td class="std"><img src="static/att2.png" align="center"></td>
+							<td class="std"><img src="static/level240.png" align="center"></td>
+							
 						</tr>
 					</table>
 				</td>
 			</tr>
 		</table>
 
-		<table>
-			<tr>
-				<td>
-					<table>
-						<tr>
-							<td colspan="2" class="std">
-								<i>Q</i>: <b>  What fruit is in the bowl? </b>
-							</td>
-						</tr>
-						<tr>
-							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55288588-50c9fe80-53d7-11e9-9441-a57e7ffc85fc.png" align="center"></td>
-							<td class="std"> <img src="https://user-images.githubusercontent.com/48848404/55269778-38fe5780-52bd-11e9-9534-5fa6e0306dad.gif" align="center"></td>
-						</tr>
-					</table>
-				</td>
-				<td>
-					<table>
-						<tr>
-							<td colspan="2" class="std">
-								<i>Q</i>: <b>  Which animals are they?  </b>
-							</td>
-						</tr>
-						<tr>
-							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55288656-4bb97f00-53d8-11e9-997b-1f11dd333b36.png" align="center"></td>
-							<td class="std"><img src="https://user-images.githubusercontent.com/48848404/55269771-2ab03b80-52bd-11e9-91a8-55b25c0de68e.gif" align="center"></td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-		</table>
+<!-- ---------------------------------------------------------------------------------------------------------- -->
 
 
+<!-- --------------------------------------------------Results--------------------------------------------------------- -->
 <p class="sz15 bold">
-	Cite us
-</p>
 
+		Some Results from Dataset:
+	</p>
+	<div class="block_1" id="code" >
 
-<div class="well" style="font-family: monospace">
-@inproceedings{Patro_ICCV2019,
-	<br>
-  title={U-CAM: Visual Explanation using Uncertainty based Class Activation Maps},
-	<br>
-  author={Badri N. Patro and Mayank Lunayach and Shivansh Patel and Vinay P. Namboodiri},
-	<br>
-  booktitle={arXiv preprint arXiv:1908.06306},
-<br>
-  year={2019}}
-</div> -->
+		<table>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td colspan="4" class="std2">
+								<i>Sample Results</i>
+							</td>
+						</tr>
+						<tr>
+							<td class="std2"><img src="static/152a1.png" align="center"></td>
+							<td class="std2"><img src="static/423a1.png" align="center"></td>
+							<td class="std2"><img src="static/249a1.png" align="center"></td>
+							<td class="std2"><img src="static/152a1.png" align="center"></td>
+							<!-- <td class="std"><img src="https://user-images.githubusercontent.com/48848404/55269813-87abf180-52bd-11e9-87c9-35aac68c0713.gif" align="center"></td> -->
+						</tr>
+					</table>
+				</td>
+			</tr>
 
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td colspan="4	" class="std2">
+								<i>Sample Results</i>
+							</td>
+						</tr>
+						<tr>
+							<td class="std2"><img src="static/152a1.png" align="center"></td>
+							<td class="std2"><img src="static/423a1.png" align="center"></td>
+							<td class="std2"><img src="static/249a1.png" align="center"></td>
+							<td class="std2"><img src="static/249a1.png" align="center"></td>	
+							
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
 
-<!--         		    <div align="center" style="margin-left:26%; text-align: center;">-->
-<!--         			<span style="float: left; max-width: 40%"><p>.</p>-->
-<!--                    <img style="" src="https://raw.githubusercontent.com/DelTA-Lab-IITK/CD3A/gh-pages/images/grl.png">-->
-<!--           			</span>-->
-
-<!--           			<span style="float: left; max-width: 40%">-->
-<!--         			<p>.</p>-->
-<!--                    <img style="" src="https://raw.githubusercontent.com/DelTA-Lab-IITK/CD3A/gh-pages/images/tsne.png">-->
-<!--          			</span>-->
-
-<!--    				</div>-->
-
-<!--	</div>-->
-
-
-
-<!--	<div class="block_1" id="code">-->
-
-<!--			 		<div style="margin-left: 26%; text-align: center;">-->
-<!--         			<span style="float: left; max-width: 40%"><p>.</p>-->
-<!--                    <img style="" src="https://raw.githubusercontent.com/DelTA-Lab-IITK/CD3A/gh-pages/images/ad_proxy.png">-->
-<!--           			</span>-->
-
-
-
-<!--           			<span style="float: left; max-width: 40%">-->
-<!--         			<p>.</p>-->
-<!--                    <img style="" src="https://raw.githubusercontent.com/DelTA-Lab-IITK/CD3A/gh-pages/images/proxy_aw_new.png">-->
-<!--                	</span>-->
-<!--    				</div>-->
-
-<!--	</div>-->
-
-
-<!--<div class="block_1" id="code">-->
-
-<!--			<div style="margin-left:26%;text-align: center;">-->
-<!--         			<span style="float: left; max-width: 40%"><p>.</p>-->
-<!--                    <img style="" src="https://raw.githubusercontent.com/DelTA-Lab-IITK/CD3A/gh-pages/images/ensemble.png">-->
-<!--           			</span>-->
-
-
-<!--           			<span style="float: left; max-width: 40%"><p>.</p>-->
-<!--                    <img style="" src="https://raw.githubusercontent.com/DelTA-Lab-IITK/CD3A/gh-pages/images/main_fig_final.png">-->
-<!--           			</span>-->
-<!--           	</div>-->
-<!--	</div>-->
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
 
 
 
-<!--		<p class="sz15 bold">-->
-<!--			<br>-->
-<!--&lt;!&ndash;			More updates to the page coming soon...&ndash;&gt;-->
-<!--		</p>-->
-<!--		<hr>-->
-
-<!--	<div class="block_1" id="code">-->
-
-
-<!--             	&lt;!&ndash;<img style="" src="http://home.iitk.ac.in/~vinodkk/cada/attention_tsne.png">-->
-
-
-<!--          		<span  style="position: absolute; bottom: 200px; margin-left:10px;">Vinod Kumar Kurmi helloJau ho<br>hi and hello</span>-->
-<!--          		&ndash;&gt;-->
-
-<!--          	<center>-->
-<!--          	 <table width="600px" style="margin-left: %;">-->
-<!--          	 <tbody align="center"><tr>-->
-<!--				  <td><a target="_blank" href="https://arxiv.org/pdf/1907.10628.pdf"><img class="layered-paper-big" style="height:160px" src="https://raw.githubusercontent.com/DelTA-Lab-IITK/CD3A/gh-pages/images/0215.png"></a></td>-->
-<!--				  <td><span style="font-size:12pt; margin-left: 40px;">V. K. Kurmi, Vipul Bajaj, Venkatesh K Subramanian, V. P. Namboodiri<br>-->
-<!--				  <b><span style="font-size:12pt; margin-left: 50px;">-->
-<!--			<p class="sz20 bold no_margin" align="center" style="margin-left: 40px;">Curriculum based Dropout Discriminator for Domain Adaptation</span></b><br>-->
-<!--				  &lt;!&ndash; <span style="font-size:12pt">In IJCNN, 2019.  &ndash;&gt;-->
-<!--				  &lt;!&ndash; (hosted on <a href="https://arxiv.org/abs/1711.11586">arXiv</a>) &ndash;&gt;-->
-<!--				  </span>-->
-<!--				  <span style="font-size:4pt"><a href="https://junyanz.github.io/BicycleGAN/"><br></a>-->
-<!--				  </span>-->
-<!--				  </td>-->
-
-<!--              </tr>-->
-<!--  		  </tbody>-->
-<!--  		  </table>-->
-<!--          </center>-->
-
-<!--	</div>-->
-
-
-
-<!--	<div class="block_1" id="data">-->
-<!--			<br>-->
-<!--	</div>-->
-<!--	<div class="block_1" id="Bibtex">-->
-<!--			<div class="">-->
-<!--							<p class="sz15 bold">BibTex</p>-->
-<!--							<p style="font-family: Comic Sans MS; font-size: 14px;">@article{kurmi2019curriculum,<br>-->
-<!--							 title={Curriculum based Dropout Discriminator for Domain Adaptation},<br>-->
-<!--							 author={Kurmi, Vinod Kumar and Bajaj, Vipul and Subramanian, Venkatesh K and Namboodiri, Vinay P},<br>-->
-<!--							 journal={arXiv preprint arXiv:1907.10628},<br>-->
-<!--							 year={2019}-->
-<!--							}<br>-->
-<!--						    </p>-->
-<!--			</div>-->
-<!--	</div>-->
-
-<!--	<div class="block_1">-->
-<!--		<div class="">-->
-<!--			<p class="sz15 bold">Acknowledgement</p>-->
-<!--			<p>We acknowledge the help provided by <a target="_blank" href="http://deltalab.iitk.ac.in/">Delta Lab</a> members, who have supported us for this research activity.-->
-<!--			</p>-->
-<!--		</div>-->
-<!--	</div>-->
-
-
+<!-- -----------------------------------------Cite----------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
 </div>
 </div>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -632,3 +483,4 @@
 </script>
 
 </body></html>
+
