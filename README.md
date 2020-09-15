@@ -10,7 +10,7 @@ First setup virtual environment for development using conda (using following ins
    source ~/.bashrc
    conda activate [env_name]
 ```
-Follow the steps given at [argoverse-api](https://github.com/argoai/argoverse-api) to install argoverse api
+This codebase use argoverse-api. Follow the steps given at [argoverse-api](https://github.com/argoai/argoverse-api) to install argoverse api
 ### Prepare Dataset
 Download Training logs from [Argoverse](https://www.argoverse.org/data.html#download-link) site and create some directories as follows.Extract Training Part 1, 2, 3, 4 and Sample_dataset log file in `DATA/train/argoverse-tracking` and Validation log in `DATA/test/argoverse-tracking`
 
