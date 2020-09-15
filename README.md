@@ -110,6 +110,7 @@ Generate json file containing training and test set questions with answer and pr
          --val_batch_size 20 \
          --encoder_type gru \
          --lr 5e-4 \
+         --load_lidar \
          --num_epochs 20 \
          --train_num_workers 4 \
          --val_num_workers 1 
