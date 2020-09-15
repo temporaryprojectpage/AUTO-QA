@@ -75,7 +75,8 @@ Generate json file containing training and test set questions with answer and pr
 
 #### c) Feature Extraction
 ```bash
-   python extract_img_features.py --img_size=224  --root_dir='[PATH TO DATASET FOLDER]' --model_type='resnet101'
+   python extract_img_features.py --img_size=224  --root_dir='[PATH TO DATASET FOLDER]' --model_type='resnet101'  #for simple CNN_LSTM MODEL(2048 dim)
+   python extract_img_features.py --img_size=448  --root_dir='[PATH TO DATASET FOLDER]' --model_type='vgg16'      #for all other models(512x14x14 dim)
 ```
 ### Step 2: Models
    #### a) Image Based Models
