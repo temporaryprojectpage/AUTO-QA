@@ -54,7 +54,7 @@ Generate json file containing training and test set questions with answer and pr
    python extract_img_features.py --img_size=224  --root_dir='[PATH TO DATASET FOLDER]' --model_type='resnet101'
 ```
 ## Step 2: Models
-   ### a) Image-Based Models
+   ### a) Image Based Models
    ```bash
       cd models
       export CUDA_VISIBLE_DEVICES=1
@@ -62,7 +62,6 @@ Generate json file containing training and test set questions with answer and pr
       --model_type LSTM_BASIC   \
       --model_dir ../output/LSTM_BASIC \
       --image_features /data/ksumit/testing/output/processed/resnet101_features.h5 \
-      --load_lidar \
       --train_batch_size 2000 \
       --val_batch_size 1000 \
       --encoder_type lstm \
@@ -76,4 +75,32 @@ Generate json file containing training and test set questions with answer and pr
    1. ```--model_dir ``` directory to save checkpoint for each epoch
    2. ```--load_lidar ``` whether to load lidar data or not while dataloading
    3. ```--resume_training ``` to start training from saved checkpoint. In this must assign name of checkpoint to be loaded```--model_name=[checkpoint name]```, e.g. ```--model_name=SAN_gru_Ep29.pkl```.
+   
+   ### b) Point Cloud Based Models
+
+   ```bash
+      python  train.py \
+         --model_type LIDAR_MODEL \
+         --train_batch_size 20 \
+         --model_dir ../output/LIDAR_MODEL \
+         --val_batch_size 20 \
+         --encoder_type gru \
+         --lr 5e-4 \
+         --num_epochs 20 \
+         --train_num_workers 4 \
+         --val_num_workers 1 
+   ```
+   ### c) Combination Models
+   ```bash
+      python  train_lidar.py \
+         --model_type SAN_LIDAR \
+         --train_batch_size 20 \
+         --model_dir ../output/SAN_LIDAR \
+         --val_batch_size 20 \
+         --encoder_type gru \
+         --lr 5e-4 \
+         --num_epochs 20 \
+         --train_num_workers 4 \
+         --val_num_workers 1 
+   ```
 
