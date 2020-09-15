@@ -1,6 +1,7 @@
 # AUTO-QA
 # Setup
-First setup virtual environment for development usign conda or pip
+First setup virtual environment for development using conda or pip
+
 
 # Dataset Generation
 ## Step 1: Generate scene file for Image-Scenes
