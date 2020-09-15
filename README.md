@@ -1,4 +1,5 @@
-# AUTO-QA
+# AUTO-QA 
+WELCOME to Autonomous Question Answering. This repo demonstrates how to reproduce results for AUTO-QA paper and also generate necessary question and scene files.
 ## Setup
 ### Install
 It is recommend to use the Anaconda package manager. This code is tested on Ubuntu 16.04.
