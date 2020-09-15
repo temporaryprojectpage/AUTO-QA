@@ -128,5 +128,5 @@ Generate json file containing training and test set questions with answer and pr
          --train_num_workers 4 \
          --val_num_workers 1 
    ```
-   #### d)Visualization
+   #### d) Visualization
 
