@@ -1,7 +1,14 @@
 # AUTO-QA
 # Setup
-First setup virtual environment for development using conda or pip
-
+It is recommend to use the Anaconda package manager. This code is tested on Ubuntu 16.04.
+First setup virtual environment for development using conda (using following instructions)
+```bash
+   conda create --name <env_name> --file requirements.txt # or directly use yml file 
+   conda env create -f environment.yml
+   source ~/.bashrc
+   conda activate [env_name]
+```
+Follow the steps given at [argoverse-api](https://github.com/argoai/argoverse-api) to install argoverse api
 
 # Dataset Generation
 ## Step 1: Generate scene file for Image-Scenes
