@@ -1,5 +1,6 @@
 # AUTO-QA
-# Setup
+## Setup
+### Install
 It is recommend to use the Anaconda package manager. This code is tested on Ubuntu 16.04.
 First setup virtual environment for development using conda (using following instructions)
 ```bash
@@ -9,9 +10,23 @@ First setup virtual environment for development using conda (using following ins
    conda activate [env_name]
 ```
 Follow the steps given at [argoverse-api](https://github.com/argoai/argoverse-api) to install argoverse api
+### Prepare Dataset
+Download Training logs from [Argoverse](https://www.argoverse.org/data.html#download-link) site and create some directories as follows.Extract Training Part 1, 2, 3, 4 and Sample_dataset log file in `DATA/train/argoverse-tracking` and Validation log in `DATA/test/argoverse-tracking`
 
-# Dataset Generation
-## Step 1: Generate scene file for Image-Scenes
+```plain
+└── DATA <-Root dir for Dataset
+       ├── train    <-- 66 training logs (from train 1,2,3,4 and sample_dataset in argoverse dataset)
+       |   └── argoverse-tracking <-- contain all logs
+       |       └── logs
+       |
+       └── test   25 test logs (from val in argoverse dataset)  
+           └── argoverse-tracking
+               └── logs
+           
+```
+
+## Dataset Generation
+### Step 1: Generate scene file for Image-Scenes
 
 First we will create label file corresponding to each log file in lidar dataset by projectind 3D annotation into images.
 ```bash
@@ -27,7 +42,7 @@ Next we will create scene file, taking reference as the data collection vehicle.
 The generated scene files for each log can be found in `output\[train\test]_scenes`
 
 
-## Step 2: Generate Questions using scene file
+### Step 2: Generate Questions using scene file
 
 ```bash
    cd ../question_generation
@@ -44,9 +59,9 @@ The generated scene files for each log can be found in `output\[train\test]_scen
 ```
 Generate json file containing training and test set questions with answer and program at ```output/ARGO_[train/test]_questions.json```
 
-# Baseline Models
-## Step 1: Encoding question and Feature Extraction
- ### a) Encoding Question
+## Baseline Models
+### Step 1: Encoding question and Feature Extraction
+ #### a) Encoding Question
 ```bash
    cd ../argo_preprocess
    python preprocess_questions.py  --input_questions_json='../output/ARGO_[train/test]_questions.json'  --output_h5_file='all_questions.h5' --output_vocab_json=' vocab_[train/test].json'
@@ -61,8 +76,8 @@ Generate json file containing training and test set questions with answer and pr
 ```bash
    python extract_img_features.py --img_size=224  --root_dir='[PATH TO DATASET FOLDER]' --model_type='resnet101'
 ```
-## Step 2: Models
-   ### a) Image Based Models
+### Step 2: Models
+   #### a) Image Based Models
    ```bash
       cd models
       export CUDA_VISIBLE_DEVICES=1
@@ -84,7 +99,7 @@ Generate json file containing training and test set questions with answer and pr
    2. ```--load_lidar ``` whether to load lidar data or not while dataloading
    3. ```--resume_training ``` to start training from saved checkpoint. In this must assign name of checkpoint to be loaded```--model_name=[checkpoint name]```, e.g. ```--model_name=SAN_gru_Ep29.pkl```.
    
-   ### b) Point Cloud Based Models
+   #### b) Point Cloud Based Models
 
    ```bash
       python  train.py \
@@ -98,7 +113,7 @@ Generate json file containing training and test set questions with answer and pr
          --train_num_workers 4 \
          --val_num_workers 1 
    ```
-   ### c) Combination Models
+   #### c) Combination Models
    ```bash
       python  train_lidar.py \
          --model_type SAN_LIDAR \
