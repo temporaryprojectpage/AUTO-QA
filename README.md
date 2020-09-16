@@ -190,3 +190,7 @@ Generate json file containing training and test set questions with answer and pr
 	    | tee test_mutan.txt
    ```
 #### References
+For question generation and preprocessing we have used [CLEVR](https://github.com/facebookresearch/clevr-iep), [CLEVR-IEP](https://github.com/facebookresearch/clevr-dataset-gen).
+
+For testing different existing vqa models and pointnet++ implementation , we have refered [MLB, MUTAN, MCB](https://github.com/Cadene/vqa.pytorch), [PointNet++](https://github.com/yanx27/Pointnet_Pointnet2_pytorch), [Dan](https://github.com/tzuhsial/pytorch-vqa-dan), [SAN](https://github.com/rshivansh/San-Pytorch), [MFB](https://github.com/yuzcccc/vqa-mfb).
+
