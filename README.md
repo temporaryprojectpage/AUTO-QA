@@ -94,7 +94,7 @@ Generate json file containing training and test set questions with answer and pr
        --num_epochs 30 \
        --train_num_workers 4 \
        --val_num_workers 2 \
-       --image_features ../output/processed/vgg16_features.h5 \
+       --image_features ../output/processed/vgg16_train_features.h5 \
        --train_encodings ../output/processed/train_questions.h5 \
        --val_encodings ../output/processed/val_questions.h5 \
        --vocab ../output/processed/vocab_train.json \
@@ -116,10 +116,10 @@ Generate json file containing training and test set questions with answer and pr
           --num_epochs 20 \
           --train_num_workers 4 \
           --val_num_workers 1 \
-          --image_features ../output/processed/vgg16_features.h5 \
+          --image_features ../output/processed/vgg16_train_features.h5 \
           --train_encodings ../output/processed/train_questions.h5 \
           --val_encodings../output/processed/val_questions.h5 \
-          --vocab ../output/processed/vocab.json \
+          --vocab ../output/processed/vocab_train.json \
 	  | tee lidar_model.txt 
    ```
    To add:
@@ -138,7 +138,7 @@ Generate json file containing training and test set questions with answer and pr
        --model_type MUTAN_LIDAR \
        --train_batch_size 20 \
        --model_dir ../output/MUTAN_LIDAR \
-       --image_features ../output/processed/vgg16_features.h5 \
+       --image_features ../output/processed/vgg16_train_features.h5 \
        --train_encodings ../output/processed/train_questions.h5 \
        --val_encodings ../output/processed/val_questions.h5 \
        --vocab ../output/processed/vocab_train.json \
@@ -155,20 +155,20 @@ Generate json file containing training and test set questions with answer and pr
    
    #### d) Visualization
    ```bash
-      python  visualize.py \
-    --model_type SAN \
-    --model_dir ../output/SAN_vgg16_sigmoid_new_quesition \
-    --model_name=SAN_gru_Ep29.pkl \
-    --save_dir=../../output/results_images_SAN \
-    --val_batch_size 100 \
-    --encoder_type gru \
-    --val_num_workers 1 \
-    --image_features ../output/processed/vgg16_features.h5 \
-    --val_encodings ../output/processed/val_questions2.h5 \
-    --vocab ../output/processed/vocab2.json \
-    | tee log_san_images.txt 
+	python  visualize.py \
+	 --model_type SAN \
+	 --model_dir ../output/SAN_vgg16_sigmoid_new_quesition \
+	 --model_name=SAN_gru_Ep29.pkl \
+	 --save_dir=../../output/results_images_SAN \
+	 --val_batch_size 100 \
+	 --encoder_type gru \
+	 --val_num_workers 1 \
+	 --image_features ../output/processed/vgg16_train_features.h5 \
+	 --val_encodings ../output/processed/val_questions.h5 \
+	 --vocab ../output/processed/vocab_train.json \
+	 | tee log_san_images.txt 
    ```
-    To add:
+   To add:
    
    1. ```--save_dir ``` directory to save images for after attention visualization
    2.```--model_name=[checkpoint name]``` to load checkpoint for attention visualization, e.g. ```--model_name=SAN_gru_Ep29.pkl```.
