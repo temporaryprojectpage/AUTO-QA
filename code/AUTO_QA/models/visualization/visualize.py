@@ -94,7 +94,7 @@ def main(args):
         vocab=os.path.join(args.input_base, args.vocab),
         image_feature_h5=os.path.join(args.input_base, args.image_features),
         batch_size= args.val_batch_size,
-        lidar_feature_h5='/data/ksumit/Data/train/argoverse-tracking',
+        lidar_feature_h5='../../Data/train/argoverse-tracking',
         load_lidar=False,
         num_workers=args.val_num_workers,
         collate_fn=argo_collate
