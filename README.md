@@ -82,52 +82,112 @@ Generate json file containing training and test set questions with answer and pr
    #### a) Image Based Models
    ```bash
       cd models
-      export CUDA_VISIBLE_DEVICES=1
-      python train.py 
-      --model_type LSTM_BASIC   \
-      --model_dir ../output/LSTM_BASIC \
-      --image_features /data/ksumit/testing/output/processed/resnet101_features.h5 \
-      --train_batch_size 2000 \
-      --val_batch_size 1000 \
-      --encoder_type lstm \
-      --lr 1e-4 \
-      --num_epochs 20 \
-      --train_num_workers 4 \
-      --val_num_workers 1 
+      export CUDA_VISIBLE_DEVICES=1 #1,2,3 for multi-gpu training
+      python  train.py \
+       --model_type SAN \
+       --train_batch_size 300 \
+       --model_dir ../output/SAN \
+       --val_batch_size 100 \
+       --encoder_type gru \
+       --lr 5e-2 \
+       --fusion_type concat \
+       --num_epochs 30 \
+       --train_num_workers 4 \
+       --val_num_workers 2 \
+       --image_features ../output/processed/vgg16_features.h5 \
+       --train_encodings ../output/processed/train_questions.h5 \
+       --val_encodings ../output/processed/val_questions.h5 \
+       --vocab ../output/processed/vocab_train.json \
+       | tee san.txt
    ```
-   To add:
-   
-   1. ```--model_dir ``` directory to save checkpoint for each epoch
-   2. ```--load_lidar ``` whether to load lidar data or not while dataloading
-   3. ```--resume_training ``` to start training from saved checkpoint. In this must assign name of checkpoint to be loaded```--model_name=[checkpoint name]```, e.g. ```--model_name=SAN_gru_Ep29.pkl```.
    
    #### b) Point Cloud Based Models
 
    ```bash
       python  train.py \
-         --model_type LIDAR_MODEL \
-         --train_batch_size 20 \
-         --model_dir ../output/LIDAR_MODEL \
-         --val_batch_size 20 \
-         --encoder_type gru \
-         --lr 5e-4 \
-         --load_lidar \
-         --num_epochs 20 \
-         --train_num_workers 4 \
-         --val_num_workers 1 
+          --model_type LIDAR_MODEL \
+          --train_batch_size 10 \
+          --model_dir ../output/LIDAR_MODEL \
+          --val_batch_size 10 \
+          --encoder_type gru \
+          --load_lidar \
+          --lr 5e-4 \
+          --grouping multi_scale \
+          --num_epochs 20 \
+          --train_num_workers 4 \
+          --val_num_workers 1 \
+          --image_features ../output/processed/vgg16_features.h5 \
+          --train_encodings ../output/processed/train_questions.h5 \
+          --val_encodings../output/processed/val_questions.h5 \
+          --vocab ../output/processed/vocab.json \
+	  | tee lidar_model.txt 
    ```
+   To add:
+   
+   1. ```--model_dir ``` directory to save checkpoint for each epoch
+   2. ```--load_lidar ``` whether to load lidar data or not while dataloading
+   3. ```--resume_training ``` to start training from saved checkpoint. In this must assign name of checkpoint to be loaded ```--model_name=[checkpoint name]```,    e.g. ```--model_name=SAN_gru_Ep29.pkl```.
+   4. ```--fusion_type={'concat','dot'}``` for 'CNN_LSTM' and 'LIDAR_MODEL' model and ```--fusion_type={'concat','hierarchical'}``` for simple concat model or hierarchical which use our level-2 attention for all other models
+   5. ```--model_type={'LSTM_BASIC','CNN_LSTM','LIDAR_LSTM','LIDAR_CNN_LSTM','SAN','MCB','DAN','MFB','LIDAR_MODEL'}``` for chosing different level-1 attention
+   6. ```--grouping={'single_scale','multi_scale'}``` for different backbone network for Point Cloud Based Model ('LIDAR_MODEL')
+   7. ```--image_features={resnet152_features,vgg16_features}``` resnet152 features for 'CNN_LSTM' and all other image based model use vgg16 features.
+   
    #### c) Combination Models
    ```bash
-      python  train_lidar.py \
-         --model_type SAN_LIDAR \
-         --train_batch_size 20 \
-         --model_dir ../output/SAN_LIDAR \
-         --val_batch_size 20 \
-         --encoder_type gru \
-         --lr 5e-4 \
-         --num_epochs 20 \
-         --train_num_workers 4 \
-         --val_num_workers 1 
+      python train_lidar.py \
+       --model_type MUTAN_LIDAR \
+       --train_batch_size 20 \
+       --model_dir ../output/MUTAN_LIDAR \
+       --image_features ../output/processed/vgg16_features.h5 \
+       --train_encodings ../output/processed/train_questions.h5 \
+       --val_encodings ../output/processed/val_questions.h5 \
+       --vocab ../output/processed/vocab_train.json \
+       --val_batch_size 20 \
+       --encoder_type lstm \
+       --grouping multi_scale \
+       --lr 5e-3 \
+       --num_epochs 30 \
+       --grouping single_scale \
+       --train_num_workers 4 \
+       --val_num_workers 2  \
+    |  tee MUTAN_lidar.txt 
    ```
+   
    #### d) Visualization
+   ```bash
+      python  visualize.py \
+    --model_type SAN \
+    --model_dir ../output/SAN_vgg16_sigmoid_new_quesition \
+    --model_name=SAN_gru_Ep29.pkl \
+    --save_dir=../../output/results_images_SAN \
+    --val_batch_size 100 \
+    --encoder_type gru \
+    --val_num_workers 1 \
+    --image_features ../output/processed/vgg16_features.h5 \
+    --val_encodings ../output/processed/val_questions2.h5 \
+    --vocab ../output/processed/vocab2.json \
+    | tee log_san_images.txt 
+   ```
+    To add:
+   
+   1. ```--save_dir ``` directory to save images for after attention visualization
+   2.```--model_name=[checkpoint name]``` to load checkpoint for attention visualization, e.g. ```--model_name=SAN_gru_Ep29.pkl```.
+   
+   #### e) Inference
+   ```bash
+     python  inference.py \
+       --model_type MUTAN \
+       --model_dir ../output/MUTAN \
+       --model_name=MUTAN_lstm_Ep28.pkl \
+       --test_batch_size 100 \
+       --encoder_type lstm \
+       --test_num_workers 1 \
+       --image_features ../output/processed/vgg16_test_features.h5 \
+       --fusion_type hierarchical \
+       --test_encodings ../output/processed/test_questions.h5 \
+       --vocab ../output/processed/vocab_test.json \
+       | tee test_mutan.txt
+   ```
+
+
 
