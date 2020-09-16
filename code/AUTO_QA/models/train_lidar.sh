@@ -9,10 +9,10 @@ export CUDA_VISIBLE_DEVICES=1
 #     --model_type SAN_LIDAR \
 #     --train_batch_size 64 \
 #     --model_dir ../output/SAN_LIDAR \
-#     --image_features /data/ksumit/thesis/output/processed/vgg16_features.h5 \
-#     --train_encodings /data/ksumit/thesis/output/processed/train_questions.h5 \
-#     --val_encodings /data/ksumit/thesis/output/processed/val_questions.h5 \
-#     --vocab /data/ksumit/thesis/output/processed/vocab.json \
+#     --image_features ../output/processed/vgg16_train_features.h5 \
+#     --train_encodings ../output/processed/train_questions.h5 \
+#     --val_encodings ../output/processed/val_questions.h5 \
+#     --vocab ../output/processed/vocab_train.json \
 #     --val_batch_size 64 \
 #     --encoder_type gru \
 #     --lr 5e-3 \
@@ -79,16 +79,15 @@ python train_lidar.py \
     --model_type MUTAN_LIDAR \
     --train_batch_size 20 \
     --model_dir ../output/MUTAN_LIDAR \
-    --image_features /data/ksumit/thesis/output/processed/vgg16_features.h5 \
-    --train_encodings /data/ksumit/thesis/output/processed/train_questions.h5 \
-    --val_encodings /data/ksumit/thesis/output/processed/val_questions.h5 \
-    --vocab /data/ksumit/thesis/output/processed/vocab.json \
+    --image_features ../output/processed/vgg16_features.h5 \
+    --train_encodings ../output/processed/train_questions.h5 \
+    --val_encodings ../output/processed/val_questions.h5 \
+    --vocab ../output/processed/vocab_train.json \
     --val_batch_size 20 \
     --encoder_type lstm \
     --grouping multi_scale \
     --lr 5e-3 \
     --num_epochs 30 \
-    --grouping single_scale \
     --train_num_workers 4 \
     --val_num_workers 2  \
     | tee MUTAN_lidar.txt 
