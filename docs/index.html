@@ -364,6 +364,74 @@
 	</div>
 <!-- ----------------------------------------------------------------------------------------------------------------------- -->
 
+ 
+<!-- ---------------------------------------------------json format---------------------------------------------------------- -->
+	<p class="sz15 bold">
+			<br>
+			Question JSON  format:
+		</p>
+	<div class="thumbnail">
+		<p style="font-family:Helvetica; ">
+		Generated Question are stored in json data format.Following is the json format for question file.<br>Please refer to our github page for question generation process.
+		</p>
+		<p style="font-size:15px; font-weight: 200; border-style: solid; border-width: 1px; text-align:left; padding:5px;">
+			<code>
+				{<br>
+				"info" : info,
+				<br>
+	            "questions" : [question],
+	            <br>
+	            }
+	            <br>
+	            <br>
+	            info {
+	            <br>
+                "version" : str,
+                <br>
+                "split" : str,
+                <br>
+                "date_created" : datetime
+                <br>
+                }
+                <br>
+                <br>
+                
+                question {
+                <br>
+                "question_family_index" : int,
+                <br>
+                "question_index" : int,
+                <br>
+                "lidar_index" : int,
+                <br>
+                "program" : list,
+                <br>
+                "split" : str,
+                <br>
+                "template_filename" : str,
+                <br>
+                "answer" : str,
+                <br>
+                "video" : int,  #unique id of log from which question is generated
+                <br>  
+                "question" : str
+                <br>
+                }
+			</code>
+		</p>
+		<p>
+			Sample Question JSON file can be downloaded from <a href="static/sample.json">here</a>
+		</p>
+	</div>
+
+
+<!-- 
+[u'info', u'questions']
+{u'question_family_index': 0, u'question_index': 0, u'question': u'What is the closest object on side left?', u'template_filename': u'closest.json', u'lidar_index': 0, u'program': [{u'function': u'scene', u'inputs': [], u'_output': [0, 1, 2, 3, 4, 5, 6], u'value_inputs': []}, {u'function': u'filter_shape', u'inputs': [0], u'_output': [0], u'value_inputs': []}, {u'function': u'unique', u'inputs': [1], u'_output': 0, u'value_inputs': []}, {u'function': u'relate', u'inputs': [2], u'_output': [3], u'value_inputs': [u'side left']}, {u'function': u'closest', u'inputs': [3], u'_output': u'vehicle', u'value_inputs': []}], u'video': u'02cf0ce1-699a-373b-86c0-eb6fd5f4697a', u'split': u'train', u'answer': u'vehicle'}
+{u'date': u'15/09/2020', u'version': u'1.0', u'split': u'train'} -->
+
+<!-- -------------------------------------------------------------------------------------------------------- -->
+
 <!-- ----------------------------------------------------------Attention Visualization------------------------------ -->
 
 
