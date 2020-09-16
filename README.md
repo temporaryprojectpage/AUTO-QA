@@ -79,7 +79,7 @@ Generate json file containing training and test set questions with answer and pr
    python extract_img_features.py --img_size=448  --root_dir='[PATH TO DATASET FOLDER]' --model_type='vgg16'      #for all other models(512x14x14 dim)
 ```
 ### Step 2: Models
-   **Its recommended to use script files ```train.sh, train_lidar.sh, inference.sh, visualize.sh```  for prefilled arguments.**
+   **It is  recommended to use script files ```train.sh, train_lidar.sh, inference.sh, visualize.sh```  for prefilled arguments.**
    #### a) Image Based Models
    ```bash
       cd models
