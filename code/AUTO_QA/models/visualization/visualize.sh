@@ -6,28 +6,28 @@ export CUDA_VISIBLE_DEVICES=2
 
 python  visualize.py \
     --model_type SAN \
-    --model_dir /data/ksumit/testing2/output/SAN_vgg16_sigmoid_new_quesition \
+    --model_dir ../output/SAN \
     --model_name=SAN_gru_Ep29.pkl \
-    --save_dir=../../output/results_images_SAN_vgg16_sigmoid_new_quesition \
+    --save_dir=../../output/results_images_SAN \
     --val_batch_size 100 \
     --encoder_type gru \
     --val_num_workers 1 \
-    --image_features /data/ksumit/testing/output/processed/vgg16_features.h5 \
-    --val_encodings /data/ksumit/testing2/output/processed/val_questions2.h5 \
-    --vocab /data/ksumit/testing2/output/processed/vocab2.json \
-    | tee log_san_sigmoid_1.txt
+    --image_features ../output/processed/vgg16_train_features.h5 \
+    --val_encodings ../output/processed/val_questions.h5 \
+    --vocab ../../output/processed/vocab_train.json \
+    | tee log_san.txt
 
 
 # python  visualize.py \
 #     --model_type DAN \
 #     --model_dir ../../output/DAN_vgg16_hierarchical \
 #     --model_name=DAN_gru_Ep27.pkl \
-#     --save_dir=../../output/images_DAN_vgg16_sigmoid_new_quesition \
+#     --save_dir=../../output/images_DAN_vgg16 \
 #     --val_batch_size 100 \
 #     --encoder_type gru \
 #     --val_num_workers 1 \
-#     --image_features /data/ksumit/testing/output/processed/vgg16_features.h5 \
-#     | tee log_dan_sigmoid1.txt
+#     --image_features ../../output/processed/vgg16_train_features.h5 \
+#     | tee log_dan.txt
 
 
 
@@ -39,7 +39,7 @@ python  visualize.py \
 #     --val_batch_size 100 \
 #     --encoder_type gru \
 #     --val_num_workers 1 \
-#     --image_features /data/ksumit/testing/output/processed/vgg16_features.h5 \
+#     --image_features ../../output/processed/vgg16_train_features.h5 \
 #     | tee log_mcb_hierarchical_1.txt
 
 
@@ -51,8 +51,8 @@ python  visualize.py \
 #     --val_batch_size 100 \
 #     --encoder_type gru \
 #     --val_num_workers 1 \
-#     --image_features /data/ksumit/testing/output/processed/vgg16_features.h5 \
-#     | tee log_mfb_hierarchical_1.txt
+#     --image_features ../../output/processed/vgg16_train_features.h5 \
+#     | tee log_mfb_hierarchical.txt
 
 
 
@@ -65,7 +65,7 @@ python  visualize.py \
 #     --val_batch_size 100 \
 #     --encoder_type lstm \
 #     --val_num_workers 1 \
-#     --image_features /data/ksumit/testing/output/processed/vgg16_features.h5 \
+#     --image_features ../../output/processed/vgg16_train_features.h5 \
 #     | tee log_mlb_hierarchical.txt
 
 # python  visualize.py \
@@ -76,8 +76,8 @@ python  visualize.py \
 #     --val_batch_size 100 \
 #     --encoder_type lstm \
 #     --val_num_workers 1 \
-#     --image_features /data/ksumit/testing/output/processed/vgg16_features.h5 \
-#     | tee log_mutan_hierarchical_1.txt
+#     --image_features ../../output/processed/vgg16_train_features.h5 \
+#     | tee log_mutan_hierarchical.txt
 
 
 
