@@ -1,0 +1,3706 @@
+{
+    "info": {
+        "date": "15/09/2020", 
+        "version": "1.0", 
+        "split": "train"
+    }, 
+    "questions": [
+        {
+            "question_family_index": 0, 
+            "question_index": 0, 
+            "question": "What is the closest object on side left?", 
+            "template_filename": "closest.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        3
+                    ], 
+                    "value_inputs": [
+                        "side left"
+                    ]
+                }, 
+                {
+                    "function": "closest", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": "vehicle", 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "vehicle"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 1, 
+            "question": "Which object is the closest towards my front left?", 
+            "template_filename": "closest.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        4, 
+                        5
+                    ], 
+                    "value_inputs": [
+                        "front left"
+                    ]
+                }, 
+                {
+                    "function": "closest", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": "large_vehicle", 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "large_vehicle"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 2, 
+            "question": "Which object is the closest towards rear left?", 
+            "template_filename": "closest.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        6
+                    ], 
+                    "value_inputs": [
+                        "rear left"
+                    ]
+                }, 
+                {
+                    "function": "closest", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": "vehicle", 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "vehicle"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 3, 
+            "question": "Which object is the closest towards my front left?", 
+            "template_filename": "closest.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        4, 
+                        5
+                    ], 
+                    "value_inputs": [
+                        "front left"
+                    ]
+                }, 
+                {
+                    "function": "closest", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": "large_vehicle", 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "large_vehicle"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 4, 
+            "question": "Which object is the closest towards my side left?", 
+            "template_filename": "closest.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        3
+                    ], 
+                    "value_inputs": [
+                        "side left"
+                    ]
+                }, 
+                {
+                    "function": "closest", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": "vehicle", 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "vehicle"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 5, 
+            "question": "Which object is the closest towards front left?", 
+            "template_filename": "closest.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        4, 
+                        5
+                    ], 
+                    "value_inputs": [
+                        "front left"
+                    ]
+                }, 
+                {
+                    "function": "closest", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": "large_vehicle", 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "large_vehicle"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 6, 
+            "question": "How many large_vehicles are on front left ?", 
+            "template_filename": "count.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        4, 
+                        5
+                    ], 
+                    "value_inputs": [
+                        "front left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        5
+                    ], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 1, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "1"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 7, 
+            "question": "What is the count of vehicles on front right?", 
+            "template_filename": "count.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "front right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "0"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 8, 
+            "question": "What number of vehicles are on side left?", 
+            "template_filename": "count.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        3
+                    ], 
+                    "value_inputs": [
+                        "side left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        3
+                    ], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 1, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "1"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 9, 
+            "question": "What is the count of vehicles on center?", 
+            "template_filename": "count.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        1, 
+                        2
+                    ], 
+                    "value_inputs": [
+                        "center"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        1, 
+                        2
+                    ], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 2, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "2"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 10, 
+            "question": "How many large_vehicles are on rear left ?", 
+            "template_filename": "count.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        6
+                    ], 
+                    "value_inputs": [
+                        "rear left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "0"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 11, 
+            "question": "What is the count of large_vehicles on my side left?", 
+            "template_filename": "count.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        3
+                    ], 
+                    "value_inputs": [
+                        "side left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "0"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 12, 
+            "question": "What number of large_vehicles are on center?", 
+            "template_filename": "count.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        1, 
+                        2
+                    ], 
+                    "value_inputs": [
+                        "center"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        2
+                    ], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 1, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "1"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 13, 
+            "question": "What is the count of large_vehicles on my side right?", 
+            "template_filename": "count.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "side right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "0"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 14, 
+            "question": "What is the count of vehicles on my front left?", 
+            "template_filename": "count.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        4, 
+                        5
+                    ], 
+                    "value_inputs": [
+                        "front left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        4, 
+                        5
+                    ], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 2, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "2"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 15, 
+            "question": "What number of vehicles are on rear left?", 
+            "template_filename": "count.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        6
+                    ], 
+                    "value_inputs": [
+                        "rear left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        6
+                    ], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 1, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "1"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 16, 
+            "question": "What number of vehicles are on side right?", 
+            "template_filename": "count.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "side right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "0"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 17, 
+            "question": "Are there any large_vehicles on my rear right?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "rear right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": false, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "False"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 18, 
+            "question": "Are there any vehicles on side left?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        3
+                    ], 
+                    "value_inputs": [
+                        "side left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        3
+                    ], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": true, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "True"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 19, 
+            "question": "Are there any large_vehicles on side right?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "side right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": false, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "False"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 20, 
+            "question": "Are there any large_vehicles on my front left?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        4, 
+                        5
+                    ], 
+                    "value_inputs": [
+                        "front left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        5
+                    ], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": true, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "True"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 21, 
+            "question": "Are there any vehicles on center?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        1, 
+                        2
+                    ], 
+                    "value_inputs": [
+                        "center"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        1, 
+                        2
+                    ], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": true, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "True"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 22, 
+            "question": "Are there any vehicles on my front right?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "front right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": false, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "False"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 23, 
+            "question": "Are there any large_vehicles on center?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        1, 
+                        2
+                    ], 
+                    "value_inputs": [
+                        "center"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        2
+                    ], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": true, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "True"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 24, 
+            "question": "Are there any vehicles on rear right?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 0, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "rear right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": false, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "False"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 25, 
+            "question": "What is the closest object on rear left?", 
+            "template_filename": "closest.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": [
+                        "my"
+                    ]
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        7
+                    ], 
+                    "value_inputs": [
+                        "rear left"
+                    ]
+                }, 
+                {
+                    "function": "closest", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": "vehicle", 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "vehicle"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 26, 
+            "question": "How many large_vehicles are on side right ?", 
+            "template_filename": "count.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "side right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "0"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 27, 
+            "question": "What number of vehicles are on front?", 
+            "template_filename": "count.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        1, 
+                        2
+                    ], 
+                    "value_inputs": [
+                        "center"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        1, 
+                        2
+                    ], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 2, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "2"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 28, 
+            "question": "What number of vehicles are on side right?", 
+            "template_filename": "count.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "side right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "0"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 29, 
+            "question": "What number of large_vehicles are on center?", 
+            "template_filename": "count.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        1, 
+                        2
+                    ], 
+                    "value_inputs": [
+                        "center"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        2
+                    ], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 1, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "1"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 30, 
+            "question": "What is the count of vehicles on side left?", 
+            "template_filename": "count.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        3
+                    ], 
+                    "value_inputs": [
+                        "side left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        3
+                    ], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 1, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "1"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 31, 
+            "question": "How many vehicles are on rear right ?", 
+            "template_filename": "count.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "rear right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "0"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 32, 
+            "question": "What is the count of vehicles on rear left?", 
+            "template_filename": "count.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        7
+                    ], 
+                    "value_inputs": [
+                        "rear left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        7
+                    ], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 1, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "1"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 33, 
+            "question": "How many large_vehicles are on my side left ?", 
+            "template_filename": "count.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        3
+                    ], 
+                    "value_inputs": [
+                        "side left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "0"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 34, 
+            "question": "What number of vehicles are on my front left?", 
+            "template_filename": "count.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": [
+                        "front left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 3, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "3"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 35, 
+            "question": "How many large_vehicles are on my front left ?", 
+            "template_filename": "count.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": [
+                        "front left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        6
+                    ], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 1, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "1"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 36, 
+            "question": "How many large_vehicles are on rear left ?", 
+            "template_filename": "count.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        7
+                    ], 
+                    "value_inputs": [
+                        "rear left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "0"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 37, 
+            "question": "Are there any large_vehicles on side right?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "side right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": false, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "False"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 38, 
+            "question": "Are there any vehicles on rear left?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        7
+                    ], 
+                    "value_inputs": [
+                        "rear left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        7
+                    ], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": true, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "True"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 39, 
+            "question": "Are there any large_vehicles on my front?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        1, 
+                        2
+                    ], 
+                    "value_inputs": [
+                        "center"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        2
+                    ], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": true, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "True"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 40, 
+            "question": "Are there any vehicles on front right?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "front right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": false, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "False"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 41, 
+            "question": "Are there any large_vehicles on my front left?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": [
+                        "front left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        6
+                    ], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": true, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "True"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 42, 
+            "question": "Are there any vehicles on side right?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "side right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": false, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "False"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 43, 
+            "question": "Are there any vehicles on my rear right?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "rear right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": false, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "False"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 44, 
+            "question": "Are there any vehicles on front left?", 
+            "template_filename": "exist.json", 
+            "lidar_index": 1, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": [
+                        "front left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "exist", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": true, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "True"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 45, 
+            "question": "What is the closest object on front?", 
+            "template_filename": "closest.json", 
+            "lidar_index": 2, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": [
+                        "my"
+                    ]
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        1, 
+                        2
+                    ], 
+                    "value_inputs": [
+                        "center"
+                    ]
+                }, 
+                {
+                    "function": "closest", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": "vehicle", 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "vehicle"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 46, 
+            "question": "What number of vehicles are on my front right?", 
+            "template_filename": "count.json", 
+            "lidar_index": 2, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "front right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "0"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 47, 
+            "question": "How many large_vehicles are on my front left ?", 
+            "template_filename": "count.json", 
+            "lidar_index": 2, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": [
+                        "front left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        6
+                    ], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 1, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "1"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 48, 
+            "question": "How many vehicles are on front left ?", 
+            "template_filename": "count.json", 
+            "lidar_index": 2, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": [
+                        "front left"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [
+                        4, 
+                        5, 
+                        6
+                    ], 
+                    "value_inputs": [
+                        "vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 3, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "3"
+        }, 
+        {
+            "question_family_index": 0, 
+            "question_index": 49, 
+            "question": "How many large_vehicles are on my front right ?", 
+            "template_filename": "count.json", 
+            "lidar_index": 2, 
+            "program": [
+                {
+                    "function": "scene", 
+                    "inputs": [], 
+                    "_output": [
+                        0, 
+                        1, 
+                        2, 
+                        3, 
+                        4, 
+                        5, 
+                        6, 
+                        7
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        0
+                    ], 
+                    "_output": [
+                        0
+                    ], 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "unique", 
+                    "inputs": [
+                        1
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }, 
+                {
+                    "function": "relate", 
+                    "inputs": [
+                        2
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "front right"
+                    ]
+                }, 
+                {
+                    "function": "filter_shape", 
+                    "inputs": [
+                        3
+                    ], 
+                    "_output": [], 
+                    "value_inputs": [
+                        "large_vehicle"
+                    ]
+                }, 
+                {
+                    "function": "count", 
+                    "inputs": [
+                        4
+                    ], 
+                    "_output": 0, 
+                    "value_inputs": []
+                }
+            ], 
+            "video": "02cf0ce1-699a-373b-86c0-eb6fd5f4697a", 
+            "split": "train", 
+            "answer": "0"
+        }
+    ]
+}
