@@ -79,6 +79,7 @@ Generate json file containing training and test set questions with answer and pr
    python extract_img_features.py --img_size=448  --root_dir='[PATH TO DATASET FOLDER]' --model_type='vgg16'      #for all other models(512x14x14 dim)
 ```
 ### Step 2: Models
+   **Its recommended to use script files ```train.sh, train_lidar.sh, inference.sh, visualize.sh```  for prefilled arguments.**
    #### a) Image Based Models
    ```bash
       cd models
@@ -189,6 +190,7 @@ Generate json file containing training and test set questions with answer and pr
 	    --vocab ../output/processed/vocab_test.json \
 	    | tee test_mutan.txt
    ```
+   
 #### References: 
 For question generation and preprocessing we have used [CLEVR](https://github.com/facebookresearch/clevr-iep), [CLEVR-IEP](https://github.com/facebookresearch/clevr-dataset-gen).<br />
 For testing different existing vqa models and pointnet++ implementation , we have refered [MLB, MUTAN, MCB](https://github.com/Cadene/vqa.pytorch), [PointNet++](https://github.com/yanx27/Pointnet_Pointnet2_pytorch), [Dan](https://github.com/tzuhsial/pytorch-vqa-dan), [SAN](https://github.com/rshivansh/San-Pytorch), [MFB](https://github.com/yuzcccc/vqa-mfb).
