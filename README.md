@@ -155,6 +155,7 @@ Generate json file containing training and test set questions with answer and pr
    
    #### d) Visualization
    ```bash
+      cd visualization
       python  visualize.py \
 	    --model_type SAN \
 	    --model_dir ../output/SAN_vgg16_sigmoid_new_quesition \
