@@ -127,10 +127,10 @@ Generate json file containing training and test set questions with answer and pr
    1. ```--model_dir ``` directory to save checkpoint for each epoch
    2. ```--load_lidar ``` whether to load lidar data or not while dataloading
    3. ```--resume_training ``` to start training from saved checkpoint. In this must assign name of checkpoint to be loaded ```--model_name=[checkpoint name]```,    e.g. ```--model_name=SAN_gru_Ep29.pkl```.
-   4. ```--fusion_type={'concat','dot'}``` for 'CNN_LSTM' and 'LIDAR_MODEL' model and ```--fusion_type={'concat','hierarchical'}``` for simple concat model or hierarchical which use our level-2 attention for all other models
-   5. ```--model_type={'LSTM_BASIC','CNN_LSTM','LIDAR_LSTM','LIDAR_CNN_LSTM','SAN','MCB','DAN','MFB','LIDAR_MODEL'}``` for chosing different level-1 attention
-   6. ```--grouping={'single_scale','multi_scale'}``` for different backbone network for Point Cloud Based Model ('LIDAR_MODEL')
-   7. ```--image_features={resnet152_features,vgg16_features}``` resnet152 features for 'CNN_LSTM' and all other image based model use vgg16 features.
+   4. ```--fusion_type={'concat','dot'}``` for `CNN_LSTM` and `LIDAR_MODEL` model and ```--fusion_type={'concat','hierarchical'}``` for simple concat model or hierarchical which use our level-2 attention for all other models
+   5. ```--model_type={'LSTM_BASIC','CNN_LSTM','SAN','MCB','DAN','MFB','LIDAR_MODEL','MUTAN','MLB'}``` for chosing different level-1 attention
+   6. ```--grouping={'single_scale','multi_scale'}``` for different backbone network for Point Cloud Based Model (`LIDAR_MODEL`)
+   7. ```--image_features={resnet152_features,vgg16_features}``` resnet152 features for `CNN_LSTM` and all other image based model use vgg16 features.
    
    #### c) Combination Models
    ```bash
