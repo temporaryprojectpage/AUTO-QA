@@ -1,0 +1,52 @@
+[
+  {
+    "text": [
+      "What is the closest object on  [<S>] <R>?",
+      "Which object is the closest towards [<S>]  <R>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<S>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter"
+      }
+	,
+      {
+        "inputs": [
+          2
+        ],
+        "type": "closest"
+      }
+    ],
+    "params": [
+      
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      }
+    ],
+    "constraints": []
+  }
+]
+

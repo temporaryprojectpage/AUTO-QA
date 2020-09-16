@@ -1,0 +1,62 @@
+[
+  {
+    "text": [
+      "Are there any <S2>s on  [<S>] <R>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<S>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>","<S2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_exist"
+      }
+    ],
+    "params": [
+      
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "REFERENCE"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "COMPULSION"
+      }
+    ]
+    
+  }
+]
+

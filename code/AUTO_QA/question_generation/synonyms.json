@@ -1,0 +1,5 @@
+{
+  "center": ["center","front"],
+  "closest":["nearest","closest"],
+  "buss":["buses"]
+}
