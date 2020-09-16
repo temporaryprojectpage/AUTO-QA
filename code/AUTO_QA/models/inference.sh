@@ -4,14 +4,14 @@ export CUDA_VISIBLE_DEVICES=1
 
 python  inference.py \
     --model_type MUTAN \
-    --model_dir /data/ksumit/testing2/output/MUTAN_hierarchical \
+    --model_dir ../output/MUTAN_hierarchical \
     --model_name=MUTAN_lstm_Ep28.pkl \
     --test_batch_size 100 \
     --encoder_type lstm \
     --test_num_workers 1 \
-    --image_features /data/ksumit/testing/output/processed/vgg16_features.h5 \
+    --image_features ../output/processed/vgg16_test_features.h5 \
     --fusion_type hierarchical \
-    --test_encodings /data/ksumit/testing2/output/processed/val_questions2.h5 \
-    --vocab /data/ksumit/testing2/output/processed/vocab2.json \
+    --test_encodings ../output/processed/test_questions.h5 \
+    --vocab ../output/processed/vocab_test.json \
     | tee test_mutan.txt
 
